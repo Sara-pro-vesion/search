@@ -1,16 +1,37 @@
-# React + Vite
+# Search Bar Practice Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple search bar component built to practice and solidify my understanding of React state management and performance optimization hooks.
 
-Currently, two official plugins are available:
+> **Note:** This is a personal learning project, not a production-ready library. It serves as a sandbox to experiment with `State management hooks`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎯 Learning Objectives
 
-## React Compiler
+This project was built specifically to master the following React hooks:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **`useState`**: Managing the search input state and the list of results.
+- **`useEffect`**: Handling side effects, such as fetching data from a placeholder API when the search term changes.
+- **`useMemo`**: Optimizing the filtering logic to prevent unnecessary recalculations on every render.
+- **`useCallback`**: Memoizing event handlers to prevent them from being recreated on every render, ensuring child components only re-render when necessary.
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Real-time search input.
+- Fetches data from a placeholder API (e.g., JSONPlaceholder or similar).
+- Filters results locally based on the search query.
+- Loading and error state handling.
+
+## 🛠️ Tech Stack
+
+- **React** 
+- **JavaScript**
+- **Tailwind**
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+│   ├── SearchBar.jsx
+│   └── ResultsList.jsx
+├── App.jsx
+└── index.js
