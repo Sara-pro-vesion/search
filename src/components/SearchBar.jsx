@@ -13,7 +13,7 @@ export default function SearchBar() {
       type='text'
       value={input}
       placeholder='Search'
-      className='border-2 border-[#FFCAE5] p-2 rounded-sm'
+      className=' w-[220px] border-2 border-[#FFCAE5] p-2 rounded-sm'
       onChange={(e) => setInput(e.target.value)}
       ></input>
       <button className='border-2 border-[#FFCAE5] rounded-sm p-2 ' onClick={handleClick}>🔍</button></form>
