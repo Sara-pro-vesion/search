@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+:root {
+	--app-font: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+html, body, #root {
+	height: 100%;
+	width: 100%;
+}
+
+html {
+	/* move the decorative background to the root element so it covers full document */
+	background: radial-gradient( circle at 10% 10%, rgba(255,202,229,0.06), rgba(255,202,229,0) 20% ), linear-gradient(180deg,#fff 0%, #fff6fb 100%);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	font-family: var(--app-font);
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	color: #111827;
+}
+
+#root {
+	background: transparent !important;
+	min-height: 100vh;
+}
+
+/* prevent horizontal overflow from accidental wide children */
+body, #root {
+	overflow-x: hidden;
+}
+
+.app-container {
+	max-width: 720px;
+	width: 100%;
+}
+

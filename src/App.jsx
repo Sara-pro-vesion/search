@@ -25,11 +25,22 @@ export default function App() {
   }
 
   return (
-    <div className='flex flex-col justify-center items-center p-12'>
-     
-      <SearchBar onSearch = {handleSearch} /> 
-      <ResultsList users={filteredData} /> 
-      </div>
+    <div className='min-h-screen flex items-start justify-center py-16'>
+      <div className='app-container px-6'>
+        <header className='mb-8'>
+          <h1 className='text-4xl font-extrabold text-gray-900'>People</h1>
+          <p className='text-gray-600 mt-1'>Search contacts quickly</p>
+        </header>
 
+        <div className='mb-6'>
+          <SearchBar onSearch={handleSearch} />
+        </div>
+
+        <ResultsList users={filteredData} />
+        {filteredData.length === 0 && (
+          <p className='text-center text-gray-500 mt-6'>No results found</p>
+        )}
+      </div>
+    </div>
   )
 }
