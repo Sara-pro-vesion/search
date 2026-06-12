@@ -10,13 +10,12 @@ This project was built specifically to master the following React hooks:
 
 - **`useState`**: Managing the search input state and the list of results.
 - **`useEffect`**: Handling side effects, such as fetching data from a placeholder API when the search term changes.
-- **`useMemo`**: Optimizing the filtering logic to prevent unnecessary recalculations on every render.
-- **`useCallback`**: Memoizing event handlers to prevent them from being recreated on every render, ensuring child components only re-render when necessary.
+
 
 ## 🚀 Features
 
 - Real-time search input.
-- Fetches data from a placeholder API (e.g., JSONPlaceholder or similar).
+- Fetches data from a placeholder API (JSONPlaceholder).
 - Filters results locally based on the search query.
 - Loading and error state handling.
 
@@ -32,6 +31,8 @@ This project was built specifically to master the following React hooks:
 src/
 ├── components/
 │   ├── SearchBar.jsx
+    ├── UserCard.jsx
 │   └── ResultsList.jsx
 ├── App.jsx
-└── index.js
+├── main.jsx
+└── index.css
