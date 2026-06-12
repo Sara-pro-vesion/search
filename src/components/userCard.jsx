@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function UserCard({name = 'jose fernandino', email = 'fr.jose@gmail.com', id}) {
+export default function UserCard({name = 'jose fernandino', email = 'fr.jose@gmail.com', id = {}}) {
 
   const checkNameLength = (n = '') =>
     (typeof n === 'string' && n.length > 19) ? n.slice(0, 13) + '...' : n;
